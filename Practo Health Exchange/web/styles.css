@@ -64,7 +64,7 @@ img
 }
 
 #hospital_equ_img {
-    max-height: 280px;
+	max-height: 280px;
 }
 
 .donor_recepent_template
@@ -77,25 +77,25 @@ img
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,1,0.9); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 200px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,1,0.9); /* Black w/ opacity */
 }
 
 .modal-content {
-    background-color: #fefeaa;
-    margin: auto;
-    padding: 60px;
-    border: 1px solid #888;
-    width: 50%;
+	background-color: #fefeaa;
+	margin: auto;
+	padding: 60px;
+	border: 1px solid #888;
+	width: 50%;
 }
 
 .button-group
@@ -123,5 +123,10 @@ img
 {
 	position: relative;
 	top: 50%;
-    font-size: 45px;
+	font-size: 45px;
+}
+
+#bld-don
+{
+	max-height: 800px;
 }
