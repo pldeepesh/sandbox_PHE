@@ -8,79 +8,67 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js'></script>
+	<link rel="icon" href="https://coinsecure.in/assets/img/favicon/favicon.png">
 </head>
 <body>
-	<div class="jumbotron">
-		<div class="page-header">
-			<h1 class="text_center_align header"> Become a Blood Donor</h1>
-		</div>
+	<div class="container well">
+		<h3 class="text_center_align">Donor Information</h3>
+		<hr class="line">
+		<form class="col-md-6 col-md-offset-3">
+			<div class="form-group">
+				<label>Date of Birth</label>
+				<input type="date" class="form-control " name ="date_of_birth" value="DD/MM/YYYY">            
+			</div>
+			<div class="form-group">
+				<label>Your Blood Group</label>
+				<select class="form-control" id="blood-group" name="blood_group">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="A+">A+</option>
+					<option value="B">B</option>
+					<option value="B+">B+</option>
+					<option value="AB">AB+</option>
+					<option value="AB+">AB-</option>
+					<option value="O">O+</option>
+					<option value="O+">O-</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Weight</label>
+				<input type="number" class="form-control" name="weight" placeholder="in KG">
+			</div>
+			<div class="form-group">
+				<label>When did you donate blood last?</label>
+				<select class="form-control" id="blood-group" name="donated_last">
+					<option value=""></option>
+					<option value="Less than 3 months before">Less than 3 months before</option>
+					<option value="Greater than 3 months before">Greater than 3 months before</option>
+					<option value="Less than a year">Less than a year</option>
+					<option value="Greater than a year">Greater than a year</option>
+					<option value="Never donated blood">Never donated blood</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>House No or Flat No</label>
+				<input type="text" class="form-control" name="address" placeholder="Address Line 1">
+			</div>
+			<div class="form-group">
+				<label>Locality</label>
+				<input type="text" class="form-control" name="locality" placeholder="Locality">
+			</div>
+			<div class="form-group">
+				<label>City</label>
+				<input type="text" class="form-control" name="city" placeholder="City">
+			</div>
+			<div class="form-group">
+				<label>Phone Number</label>
+				<input type="number" class="form-control" name="phone_number" placeholder="Ph No">
+			</div>
+			<div class="text_center_align">
+				<button type="submit" name="blood_donor" value="submit" class="btn btn-success"> Submit</button>
+			</div>
+		</form>
 	</div>
-	
-	<div class="row">
-		<div class="col-md-6">
-			<h3 class="text_center_align">Donor Information</h3>
 
-			<form class="col-md-8 col-md-offset-2">
-				<div class="form-group">
-					<label>Date of Birth</label>
-					<input type="date" class="form-control " name ="date_of_birth" value="DD/MM/YYYY">            
-				</div>
-				<div class="form-group">
-					<label>Your Blood Group</label>
-					<select class="form-control" id="blood-group" name="blood_group">
-						<option value=""></option>
-						<option value="A">A</option>
-						<option value="A+">A+</option>
-						<option value="B">B</option>
-						<option value="B+">B+</option>
-						<option value="AB">AB+</option>
-						<option value="AB+">AB-</option>
-						<option value="O">O+</option>
-						<option value="O+">O-</option>
-					</select>
-				</div>
-				<div class="form-group">
-					<label>Weight</label>
-					<input type="number" class="form-control" name="weight" placeholder="in KG">
-				</div>
-				<div class="form-group">
-					<label>When did you donate blood last?</label>
-					<select class="form-control" id="blood-group" name="donated_last">
-						<option value=""></option>
-						<option value="Less than 3 months before">Less than 3 months before</option>
-						<option value="Greater than 3 months before">Greater than 3 months before</option>
-						<option value="Less than a year">Less than a year</option>
-						<option value="Greater than a year">Greater than a year</option>
-						<option value="Never donated blood">Never donated blood</option>
-					</select>
-				</div>
-			</form>
-		</div>
-
-		<div class="col-md-6">
-			<h3 class="text_center_align">Contact Information</h3>
-			<form class="col-md-8 col-md-offset-2">
-				<div class="form-group">
-					<label>House No or Flat No</label>
-					<input type="text" class="form-control" name="address" placeholder="Address Line 1">
-				</div>
-				<div class="form-group">
-					<label>Locality</label>
-					<input type="text" class="form-control" name="locality" placeholder="Locality">
-				</div>
-				<div class="form-group">
-					<label>City</label>
-					<input type="text" class="form-control" name="city" placeholder="City">
-				</div>
-				<div class="form-group">
-					<label>Phone Number</label>
-					<input type="number" class="form-control" name="phone_number" placeholder="Ph No">
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="text_center_align">
-		<button type="submit" name="blood_donor" value="submit" class="btn btn-success"> Submit</button>
-	</div>
 </body>
 </html>

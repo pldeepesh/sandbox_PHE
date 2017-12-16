@@ -136,3 +136,9 @@ img
 	padding-top: 100px !important;
 	padding-bottom: 100px !important;
 }
+
+.well
+{
+	width: 50% !important;
+	margin-top: 25px !important;
+}
