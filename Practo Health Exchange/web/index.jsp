@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <form method="post" action="src/login">
+    <form method="post" action="login">
         <nav class="navbar navbar-inverse">
 	
   

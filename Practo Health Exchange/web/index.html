@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+    <form method="post" action="12345678">
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -25,12 +27,15 @@
           <li><a href="#">Page 1-3</a></li>
         </ul>
       </li> -->
-      <li><input type="text" name="username" placeholder="username" class="signin"></li>
+      <li><%String name=(String)request.getAttribute("name");
+     if(name!=null)
+     {%><input type="text" name="username" placeholder="username" class="signin"></li>
       <li><input type="password" name="password" placeholder="password" class="signin"></li>
       <li><input type="submit" name="log_in" value="Log In" class="signin"> </li>
     </ul>
   </div>
 </nav>
 </nav>
+</form>
 </body>
 </html>

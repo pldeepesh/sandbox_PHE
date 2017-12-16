@@ -76,7 +76,7 @@ public class login extends HttpServlet {
             rs1 = stmt1.executeQuery(query1);              
             if(rs1.next())
             {
-            RequestDispatcher rd = getServletContext().getRequestDispatcher("/WelcomeAdmin.jsp");
+            RequestDispatcher rd = getServletContext().getRequestDispatcher("/donor.jsp");
             rd.forward(request, response);
             }            
             else
