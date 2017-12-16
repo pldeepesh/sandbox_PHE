@@ -4,33 +4,91 @@
 	<title>Practo Health Exchange</title>
 	<script type="text/javascript" href="script.js"></script>
 	<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Practo Health Exchange V 1.0</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <!-- <li class="active"><a href="#">Home</a></li> -->
-      <!-- <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Practo Health Exchange V 1.0</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><input type="text" name="name" class="signin" placeholder="Username"></li>  
+            <li><input type="password" name="password" class="signin" placeholder="password"></li>  
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+            <li><a href="#">Forgot Password?</a></li>
         </ul>
-      </li> -->
-      <li><input type="text" name="username" placeholder="username" class="signin"></li>
-      <li><input type="password" name="password" placeholder="password" class="signin"></li>
-      <li><input type="submit" name="log_in" value="Log In" class="signin"> </li>
-    </ul>
-  </div>
+    </div>
 </nav>
-</nav>
+<!-- content goes here with a image -->
+<div class="col-md-6 column_height">
+    <h1 class="display-4 text_center_align">Welcome to Practo Health Exchange</h1>
+    <img src="https://labblog.uofmhealth.org/sites/lab/files/2016-03/kidney-donor-vs-dialysis.jpg">
+    <br>
+    <br>
+    <blockquote class="blockquote blockquote-reverse">
+        <p class="mb-0">The value of life is not in its duration, but in its donation. You are not important because of how long you live, you are important because of how effective you live.</p>
+      <footer class="blockquote-footer">Myles <cite title="Source Title">Munroe</cite></footer>
+  </blockquote>
+  <blockquote class="blockquote">
+        <p class="mb-0">  I think you should automatically donate your organs because that would turn the balance of organ donation in a huge way. I would donate whatever anybody would take, and I'd probably do the cremation bit.</p>
+      <footer class="blockquote-footer">George <cite title="Source Title">Clooney</cite></footer>
+  </blockquote>
+
+</div>
+<!-- sign-up form -->
+<div class="col-md-offset-6 column_height">
+    <h1 class="display-4 text_center_align">Sign up</h1>
+    <h5 class="text_center_align">Become a donor or a recepient</h5>
+    <!-- sign-up form -->
+    <form>
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control " name ="first_name" placeholder="First Name">            
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+        </div>
+        <label class="radio-inline">
+            <input type="radio" name="male">Male
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="female">Female
+      </label>
+      <label class="radio-inline">
+          <input type="radio" name="other">Other
+      </label>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" name="email_id" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label>Username</label>
+        <input type="email" class="form-control" name="email_id" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label>Re Enter Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <!-- <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+      </label>
+  </div> -->
+  <button type="submit" class="btn btn-primary center-block">Sign Up <br>Save Lives</button>
+</form>
+</div>
 </body>
 </html>
