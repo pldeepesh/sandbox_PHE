@@ -5,6 +5,16 @@
 	margin-left: 10px;
 }
 
+#login
+{
+	padding-top: 2px;
+}
+
+.sign-up-form
+{
+	background-color: #B4C9DF;
+}
+
 .col-md-6
 {
 	/*background-color: #;*/
