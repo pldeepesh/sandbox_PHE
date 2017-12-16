@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kidney Donor Details - PHE</title>
+	<script type="text/javascript" href="script.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js'></script>
+	<link rel="icon" href="https://coinsecure.in/assets/img/favicon/favicon.png">
+</head>
+<body>
+<div class="container well">
+		<h3 class="text_center_align">Donor Information</h3>
+		<hr class="line">
+		<form class="col-md-6 col-md-offset-3">
+			<div class="form-group">
+				<label>Date of Birth</label>
+				<input type="date" class="form-control " name ="date_of_birth" value="DD/MM/YYYY">            
+			</div>
+			<div class="form-group">
+				<label>Your Blood Group</label>
+				<select class="form-control" id="blood-group" name="blood_group">
+					<option value=""></option>
+					<option value="A">A</option>
+					<option value="A+">A+</option>
+					<option value="B">B</option>
+					<option value="B+">B+</option>
+					<option value="AB">AB+</option>
+					<option value="AB+">AB-</option>
+					<option value="O">O+</option>
+					<option value="O+">O-</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Weight</label>
+				<input type="number" class="form-control" name="weight" placeholder="in KG">
+			</div>
+			<div class="form-group">
+				<label>HLA Type:</label>
+				<input type="text" class="form-control" name="hla_type" placeholder="input the exact hla marker type">
+			</div>
+			<div class="form-group">
+				<label>House No or Flat No</label>
+				<input type="text" class="form-control" name="address" placeholder="Address Line 1">
+			</div>
+			<div class="form-group">
+				<label>Locality</label>
+				<input type="text" class="form-control" name="locality" placeholder="Locality">
+			</div>
+			<div class="form-group">
+				<label>City</label>
+				<input type="text" class="form-control" name="city" placeholder="City">
+			</div>
+			<div class="form-group">
+				<label>Phone Number</label>
+				<input type="number" class="form-control" name="phone_number" placeholder="Ph No">
+			</div>
+			<div class="form-group">
+				<label>Prior Medical (if any)</label>
+				<textarea class="form-control" name="illness" placeholder="Medical issues"></textarea>
+			</div>
+			<h5>This is only the couple to tests to match the kidney with the donor, by reducing the mismatch.</h5>
+			<div class="text_center_align">
+				<button type="submit" name="blood_donor" value="submit" id="medical_issues" class="btn btn-success"> Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
