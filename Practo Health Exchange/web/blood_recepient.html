@@ -16,7 +16,7 @@
 			<h1 class="text_center_align header">Request for Blood</h1>
 		</div>
 	</div>
-	<form class="form-inline col-md-offset-2" action="">
+	<form class="form-inline col-md-offset-1" action="">
 		<div class="form-group signin">
 			<label for="City">City:</label>
 			<!-- <select class="form-control" id="blood-group" name="blood_group" placeholder="start typing city name">
@@ -37,6 +37,20 @@
 		</div>
 		<div class="form-group signin">
 			<label>Your Blood Group</label>
+			<select class="form-control" id="blood-group" name="blood_group">
+				<option value="" disabled selected >Select a blood Group</option>
+				<option value="A">A</option>
+				<option value="A+">A+</option>
+				<option value="B">B</option>
+				<option value="B+">B+</option>
+				<option value="AB">AB+</option>
+				<option value="AB+">AB-</option>
+				<option value="O">O+</option>
+				<option value="O+">O-</option>
+			</select>
+		</div>
+		<div class="form-group signin">
+			<label>Your Donor's Blood Group <abbr title="this is an optional field, this is used to match multiple pairs where your donor can donate to other who has a compatible blood type and the other donor can donate you blood of your type."><span class="glyphicon glyphicon-info-sign"></abbr></span></label>
 			<select class="form-control" id="blood-group" name="blood_group">
 				<option value="" disabled selected >Select a blood Group</option>
 				<option value="A">A</option>
