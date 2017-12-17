@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blood recepient Details - PHE</title>
+	<title>Kidney Recepient Details - PHE</title>
 	<script type="text/javascript" href="script.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,29 +13,25 @@
 <body>
 	<div class="jumbotron">
 		<div class="page-header">
-			<h1 class="text_center_align header">Request for Blood</h1>
+			<h1 class="text_center_align header">Find Kidney Donors </h1>
 		</div>
 	</div>
-	<form class="form-inline col-md-offset-1" action="">
-		<div class="form-group signin">
+	<form class="form-inline" action="">
+		<div class="form-group signin1">
 			<label for="City">City:</label>
-			<!-- <select class="form-control" id="blood-group" name="blood_group" placeholder="start typing city name">
-				<option value="" disabled selected>Start Typing City</option>
-				<option value=""></option>
-			</select> -->
 			<input type="text" class="form-control" id="blood-group" name="blood_group" placeholder="start typing city name" list="cities" />
 			<datalist id="cities">
 				<option value=""></option>
 			</datalist>
 		</div>
-		<div class="form-group signin">
+		<div class="form-group signin1">
 			<label for="pwd">Locality:</label>
 			<input type="text" class="form-control" id="blood-group" name="blood_group" placeholder="start typing Locality" list="localities" />
 			<datalist id="localities">
 				<option value=""></option>
 			</datalist>
 		</div>
-		<div class="form-group signin">
+		<div class="form-group signin1">
 			<label>Your Blood Group</label>
 			<select class="form-control" id="blood-group" name="blood_group">
 				<option value="" disabled selected >Select a blood Group</option>
@@ -49,7 +45,11 @@
 				<option value="O+">O-</option>
 			</select>
 		</div>
-		<div class="form-group signin">
+		<div class="form-group signin1">
+			<label>Your HLA</label>
+			<input type="text" name="hla" class="form-control" value="hla" placeholder="HL Antigen">
+		</div>
+		<div class="form-group signin1">
 			<label>Your Donor's Blood Group <abbr title="this is an optional field, this is used to match multiple pairs where your donor can donate to other who has a compatible blood type and the other donor can donate you blood of your type."><span class="glyphicon glyphicon-info-sign"></abbr></span></label>
 			<select class="form-control" id="blood-group" name="blood_group">
 				<option value="" disabled selected >Select a blood Group</option>
@@ -63,7 +63,11 @@
 				<option value="O+">O-</option>
 			</select>
 		</div>
-		<button type="submit" class="btn btn-success signin">Submit</button>
+		<div class="form-group signin1">
+			<label>Donor's HLA</label>
+			<input type="text" name="hla" class="form-control" value="hla" placeholder="HL Antigen">
+		</div>
+		<button type="submit" class="btn btn-success signin1">Submit</button>
 	</form>
 
 </body>
